@@ -56,7 +56,6 @@ let bgAudio = new Audio("./sound/Game.mp3");
 bgAudio.loop = true;
 bgAudio.volume = 0.5;
 bgAudio.autoplay = true;
-bgAudio.play();
 
 window.onload = function () {
   board = document.getElementById("board");
