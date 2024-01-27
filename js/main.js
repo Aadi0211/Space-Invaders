@@ -1,6 +1,6 @@
-let tileSize = 46;
-let rows = 23;
-let columns = 23;
+let tileSize = 40;
+let rows = 20;
+let columns = 20;
 
 // Board
 let board;
