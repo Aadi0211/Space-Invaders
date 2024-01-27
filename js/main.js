@@ -54,7 +54,8 @@ let deathAudio = new Audio("./sound/enemy-death.wav");
 deathAudio.volume = 0.2;
 let bgAudio = new Audio("./sound/Game.mp3");
 bgAudio.loop = true;
-bgAudio.volume = 0.3;
+bgAudio.volume = 0.5;
+bgAudio.autoplay = true;
 bgAudio.play();
 
 window.onload = function () {
