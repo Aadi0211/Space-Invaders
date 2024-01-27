@@ -57,7 +57,6 @@ bgAudio.loop = true;
 bgAudio.volume = 0.5;
 bgAudio.autoplay = true;
 bgAudio.muted = true;
-bgAudio.play();
 
 window.onload = function () {
   board = document.getElementById("board");
@@ -85,7 +84,7 @@ window.onload = function () {
   createAliens();
 
   requestAnimationFrame(update);
-  document.addEventListener("keydown", moveShip);
+  document.addEventListener("keydown", moveShip, bgAudio.play());
   document.addEventListener("keyup", shoot);
 };
 
