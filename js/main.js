@@ -52,11 +52,6 @@ let shootAudio = new Audio("./sound/shoot.wav");
 shootAudio.volume = 0.2;
 let deathAudio = new Audio("./sound/enemy-death.wav");
 deathAudio.volume = 0.2;
-let bgAudio = new Audio("./sound/Game.mp3");
-bgAudio.loop = true;
-bgAudio.volume = 0.5;
-bgAudio.autoplay = true;
-bgAudio.muted = true;
 
 window.onload = function () {
   board = document.getElementById("board");
@@ -84,7 +79,7 @@ window.onload = function () {
   createAliens();
 
   requestAnimationFrame(update);
-  document.addEventListener("keydown", moveShip, bgAudio.play());
+  document.addEventListener("keydown", moveShip);
   document.addEventListener("keyup", shoot);
 };
 
